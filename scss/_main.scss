@@ -1,0 +1,970 @@
+/*--------------------MAIN--------------------*/
+.main {
+
+	&__main-block {}
+
+	&__services {
+		position: relative;
+		z-index: 2;
+		margin: -111px 0px 0px 0px;
+	}
+
+	&__advantages {}
+
+	&__practice {}
+
+	&__whoweare {}
+
+	&__clients {
+		&:not(:last-child){
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__subscribe {}
+
+	&__getintouch {}
+
+	&__contanctus {}
+}
+
+/*---------General styles:-----------*/
+.header-block {
+	text-align: center;
+	letter-spacing: 0.2px;
+	&__title {
+		font-size: 40px;
+		line-height: calc(50 / 40 * 100%);
+		font-weight: 700;
+		&:not(:last-child){
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__subtitle {
+		color: #737373;
+		line-height: calc(20 / 14 * 100%);
+	}
+}
+
+/*---------Main-Block:-----------*/
+.main-block {
+	position: relative;
+	&__container {}
+
+	&__body {
+		padding: 184px 0px 191px 0px;
+		position: relative;
+		z-index: 2;
+		max-width: 400px;
+		> *:not(:last-child) {
+			margin: 0px 0px 35px 0px;
+		}
+	}
+
+	&__title {
+		font-size: 58px;
+		line-height:calc(80 / 58 * 100%);
+		font-weight: 800;
+		letter-spacing: 0.2px;
+	}
+
+	&__text {
+		color: #737373;
+		font-size: 20px;
+		line-height:calc(30 / 20 * 100%);
+	}
+
+	&__buttons {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -10px 0px;
+	}
+
+	&__button {
+		border-radius: 37px;
+		display: flex;
+		min-height: 48px;
+		font-weight: 700;
+		line-height: calc(28 / 14 * 100%);
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 5px 36px;
+		margin: 10px 0px;
+		letter-spacing: 0.2px;
+	}
+
+	&__button-border {
+		color: #0D5C63;
+		border: 1px solid #0D5C63;
+	}
+	&__button-orange {
+		background: #FF7B47;
+		color: #fff;
+		border: 1px solid #FF7B47;
+		
+	}
+
+	&__image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+/*---------Services:-----------*/
+.services {
+	&__container {}
+
+	&__body {}
+
+	&__column {
+		flex: 0 1 33.333%;
+	}
+
+	&__item {
+		text-align: center;
+		box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+		background-color: #fff;
+		padding: 25px;
+		min-height: 100%;
+	}
+}
+
+.item-service {
+	transition: background-color 0.3s ease;
+	&:hover {
+		background-color: #0D5C63;
+		.item-service__icon,
+		.item-service__title,
+		.item-service__text {
+		color: #fff;
+		}
+	}
+	> *:not(:last-child) {
+		margin: 0px 0px 10px 0px;
+	}
+
+	&__icon {
+		font-size: 48px;
+		color: #0D5C63;
+	}
+
+	&__title {
+		font-size: 24px;
+		letter-spacing: 0.1px;
+		font-weight: 700;
+		line-height: calc(32 / 24 * 100%);
+	}
+
+	&__text {
+		color: #737373;
+		font-weight: 500;
+		line-height: calc(20 / 14 * 100%);
+	}
+	&__icon,
+	&__title,
+	&__text{
+		transition: color 0.3s ease;
+	}
+
+}
+
+/*---------Advantages:-----------*/
+.advantages {
+	padding: 80px 0px;
+	&__container {}
+
+	&__header {
+		margin: 0px 0px 50px 0px;
+	}
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -15px -30px;
+	}
+
+	&__column {
+		padding: 0px 15px;
+		margin: 0px 0px 30px 0px;
+		flex: 0 1 25%;
+	}
+
+	&__item {
+		background-color: #fff;
+		padding: 30px;
+		text-align: center;
+		font-weight: 700;
+		transition: all 0.3s ease 0s;
+		> *:not(:last-child){
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__icon {
+		font-size: 47px;
+		color: #0D5C63;
+		transition: color 0.3s ease 0s;
+	}
+
+	&__value {
+		font-size: 40px;
+		line-height: calc(57 / 40 * 100%);
+		transition: color 0.1s ease 0s;
+	}
+
+	&__text {
+		letter-spacing: 0.1px;
+		font-size: 16px;
+		color: #737373;
+		line-height: calc(24 / 16 * 100%);
+		transition: color 0.3s ease 0s;
+	}
+}
+
+/*---------Practice:-----------*/
+.practice {
+	padding: 125px 0px 80px 0px;
+	&__container {}
+
+	&__header {
+		margin: 0px 0px 45px 0px;
+	}
+
+	&__body {
+		margin: 0px -20px -30px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__column {
+		padding: 0px 20px;
+		margin: 0px 0px 30px 0px;
+		flex: 0 1 25%;
+	}
+
+	&__item {}
+}
+
+.item-practice {
+	background-color: #fff;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	&__content{
+		padding: 30px;
+		flex: 1 1 auto;
+	}
+
+	&__link {
+		display: inline-block;
+		color: inherit;
+		transition: all 0.3s ease 0s;
+		&:not(:last-child){
+			margin: 0px 0px 15px 0px;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	&__title {
+		letter-spacing: 0.1px;
+		font-size: 16px;
+		line-height: calc(24 / 16 * 100%);
+		font-weight: 700;
+	}
+
+	&__text {
+		color: #737373;
+		line-height: calc(20 / 14 * 100%);
+		transition: all 0.3s ease 0s;
+	}
+
+	&__image {
+		display: block;
+		padding: 0px 0px 60% 0px;
+	}
+}
+
+/*---------Who-We-Are:-----------*/
+.whoweare {
+	background-color: #fff;
+	padding: 80px 0px 130px 0px;
+	&__container {}
+
+	&__header {
+		margin: 0px 0px 100px 0px;
+	}
+
+	&__body {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__video {
+		flex: 0 0 57%;
+		position: relative;
+		padding: 0px 0px 42.25% 0px;
+		outline: 3px solid #0D5C63;
+		iframe{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		padding: 20px 0px 0px 121px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		letter-spacing: 0.2px;
+		line-height: calc(57 / 40 * 100%);
+		&:not(:last-child){
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: calc(20 / 14 * 100%);
+		letter-spacing: 0.2px;
+		color: #737373;
+	}
+
+	&__items {
+		margin: 50px 0px 0px 0px;
+	}
+
+	&__item {
+		&:not(:last-child){
+			margin: 0px 0px 30px 0px;
+		}
+	}
+}
+
+.item-whoweare {
+	display: flex;
+	&__icon {
+		flex: 0 0 40px;
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		color: #FF7B47;
+	}
+
+	&__body {
+		flex: 1 1 auto;
+		padding: 0px 0px 0px 20px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 16;
+		line-height: calc(24 / 16 * 100%);
+		&:not(:last-child){
+			margin: 0px 0px 5px 0px;
+		}
+	}
+
+	&__text {
+		color: #737373;
+		line-height: calc(24 / 14 * 100%);
+		letter-spacing: 0.2px;
+	}
+}
+
+/*---------Clients:-----------*/
+.clients {
+	padding: 50px 0px;
+	&__container {}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__item {
+		padding: 8px 15px;
+		flex: 0 1 16.6667%;
+		text-align: center;
+		min-width: 140px;
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
+/*---------Subscribe:-----------*/
+.subscribe {
+	position: relative;
+	padding: 0px 0px 20px 0px;
+	&::before{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 77px;
+		background-color: #252B42;
+	}
+	&__container {}
+
+	&__body {
+		position: relative;
+		z-index: 2;
+		padding: 30px 50px;
+		align-items: center;
+		background-color: #17213C;
+		border-radius: 2px;
+	}
+
+	&__title {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 0.1px;
+		line-height: calc(32 / 24 * 100%);
+	}
+
+	&__form {
+		flex: 0 1 50%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__input {
+		width: 100%;
+		flex: 1 1 auto;
+		min-height: 58px;
+		padding: 0px 20px;
+		background-color: #F9F9F9;
+		border: 1px solid #E6E6E6;
+		box-sizing: border-box;
+		color: #737373;
+		border-right: 0px;
+		&:focus{
+			color: #000;
+		}
+	}
+
+	&__button {
+		background: #FF7B47;
+		border: 1px solid #E6E6E6;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: #fff;
+		min-height: 58px;
+		padding: 0px 22px;
+	}
+}
+
+/*---------Get In Touch:-----------*/
+.getintouch {
+	background-color: #f3f3f3;
+	&__container {}
+
+	&__header {}
+
+	&__items {}
+
+	&__item {
+		flex: 0 1 33.333%;
+	}
+}
+
+.item-getintouch {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	transition: all 0.3s ease 0s;
+	> *:not(:last-child){
+		margin: 0px 0px 15px 0px;
+	}
+	&__icon {
+		font-size: 72px;
+		color: #0D5C63;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__emails {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__email {
+		color: inherit;
+		font-weight: 600;
+		line-height: calc(24 / 14 * 100%);
+		letter-spacing: 0.2x;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	&__label {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: calc(24 / 16 * 100%);
+		letter-spacing: 0.1px;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		min-height: 44px;
+		font-weight: 600;
+		line-height: calc(24 / 14 * 100%);
+		letter-spacing: 0.2px;
+		color: #FF7B47;
+		padding: 5px 20px;
+		border: 1px solid #FF7B47;
+		border-radius: 5px;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			background-color: #FF7B47;
+			color: #fff;
+		}
+	}
+}
+
+/*---------Contanct Us:-----------*/
+.contanctus {
+	background-color: #fff;
+	padding: 40px 0px;
+	&__container {}
+
+	&__body {}
+
+	&__content {}
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: calc(32 / 24 * 100%);
+		letter-spacing: 0.1px;
+		&:not(:last-child){
+			margin: 0px 0px 10px 0px;
+		}
+	}
+
+	&__text {
+		line-height:calc(20 / 14 * 100%);
+		letter-spacing: 0.2px;
+		color: #737373;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		min-height: 58px;
+		padding: 5px 40px;
+		font-weight: 700;
+		line-height: calc(28 / 14 * 100%);
+		letter-spacing: 0.2px;
+		background-color: #FF7B47;
+		color: #fff;
+		border-radius: 5px;
+		transition: background-color 0.3s ease 0s;
+		&:hover{
+			background-color: #ff7b477d;
+		}
+	}
+}
+
+/*---------@MEDIA:-----------*/
+
+@media (max-width: 1300px) {
+	.main-block{
+		&__image{
+			img{
+				object-position: right;
+			}
+		}
+	}
+}
+
+@media (max-width: 1020px) {
+	.advantages{
+		&__column{
+			flex: 0 1 50%;
+		}
+	}
+
+	.practice{
+		&__column{
+			flex: 0 1 50%
+		}
+	}
+
+	.whoweare{
+		&__content{
+			padding: 0px 0px 0px 50px;
+		}
+	}
+}
+
+@media (min-width: 1070px) {
+	.subscribe{
+		&__body{
+			margin: 0px 30px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.main-block{
+		&__body {
+			padding: 120px 0px 191px 0px;
+		}
+		&__image{
+			opacity: 0.2;
+		}
+	}
+
+	.header-block{
+		&__title{
+			font-size: 35px;
+		}
+	}
+
+	.services{
+		&__column{
+			flex: 0 1 50%;
+			&:not(:last-child) {
+				margin: 0px 0px 30px 0px;
+			}
+			&:last-child{
+				flex: 1 1 100%;
+			}
+		}
+	}
+
+	.advantages{
+		padding: 50px 0px;
+	}
+
+	.practice{
+		padding: 40px 0px 80px 0px;
+	}
+
+	.whoweare{
+		padding: 50px 0px 50px 0px;
+		&__body{
+			flex-direction: column-reverse;
+			align-items: stretch;
+		}
+
+		&__content{
+			padding: 0px 0px 0px 0px;
+		}
+
+		&__video{
+			padding: 0px 0px 56.25% 0px;
+			&:not(:last-child) {
+				margin: 50px 0px 0px 0px;
+			}
+		}
+
+		&__header{
+			margin: 0px 0px 30px 0px;
+		}
+
+		&__title{
+			font-size: 24px;
+		}
+	}
+}
+
+@media (min-width: 810px) {
+	.subscribe{
+		&__body{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__title{
+			max-width: 266px;
+		}
+	}
+}
+
+@media (max-width: 810px) {
+	.subscribe{
+		&__body{
+			margin: 0px -15px;
+			padding: 20px 25px;
+		}
+
+		&__title{
+			margin: 0px 0px 20px 0px;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.whoweare{
+		padding: 20px 0px 50px 0px;
+		
+		&__items{
+			margin: 30px 0px 0px 0px;
+		}
+
+		&__item{
+			&:not(:last-child){
+				margin: 0px 0px 20px 0px;
+			}
+		}
+
+		&__video{
+			&:not(:last-child){
+				margin: 30px 0px 0px 0px;
+			}
+		}
+	}
+
+	.clients{
+		padding: 30px 0px;
+	}
+
+	.subscribe{
+		&__form{
+			flex-direction: column;
+		}
+
+		&__button{
+			width: 100%;
+			border-radius: 5px;
+			
+		}
+
+		&__input{
+			border-radius: 5px;
+			margin: 0px 0px 5px 0px;
+		}
+	}
+
+	.getintouch{
+		padding: 50px 0px;
+		&__header {
+			margin: 0px 0px 40px 0px;
+		}
+	}
+
+	.item-getintouch{
+		padding: 25px 15px;
+		margin: 15px -15px;
+	}
+
+	.contanctus{
+		&__content {
+			padding: 0px 0px 10px 0px;
+		}
+	}
+}
+
+@media (min-width: 767.98px) {
+	.main-block{
+		&__button-border{
+			transition: all 0.3s ease 0s;
+			&:hover{
+				color: #fff;
+				background-color: #0D5C63;
+				border-color: #fff;
+			}
+		}
+
+		&__button-orange{
+			transition: all 0.3s ease 0s;
+			&:hover{
+				background: #fff;
+				color: #FF7B47;
+				border-color: #FF7B47;
+			}
+		}
+	}
+
+	.advantages{
+		padding: 40px 0px;
+		&__header{
+			margin: 0px 0px 25px 0px;
+		}
+
+		&__item{
+			&:hover{
+				background-color:#0D5C63;
+				color: #fff;
+				.advantages__icon,
+				.advantages__text{
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.header-block{
+		&__title{
+			font-size: 30px;
+		}
+	}
+
+	.practice{
+		padding: 0px 0px 40px 0px;
+		&__header{
+			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	.item-practice{
+		transition: all 0.3s ease 0s;
+		&:hover{
+			transform: scale(1.1);
+			background-color: #0D5C63;
+			.item-practice__link,
+			.item-practice__text{
+				color: #fff;
+			}
+		}
+	}
+
+	.subscribe{
+		&__input{
+			border-radius: 5px 0px 0px 5px;
+		}
+
+		&__button{
+			border-radius: 0px 5px 5px 0px;
+			transition: all 0.3s ease 0s;
+			&:hover{
+				background-color: rgba(255, 123, 71, 0.9);
+			}
+		}
+	}
+
+	.getintouch{
+		padding: 80px 0px 135px 0px;
+		&__items {
+			display: flex;
+			align-items: center;
+		}
+
+		&__header {
+			margin: 0px 0px 80px 0px;
+		}
+	}
+
+	.item-getintouch{
+		padding: 50px 15px;
+		margin: 30px 0px;
+		&:hover {
+			padding: 80px 15px;
+			margin: 0px 0px;
+			background-color: #252B42;
+			color: #fff;
+
+			.item-getintouch__icon {
+				color: #fff;
+			}
+
+			.item-getintouch__button {
+				color: #fff;
+				border-color: #fff;
+			}
+		}
+	}
+
+	.contanctus{
+		&__body{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&__content {
+			padding: 0px 20px 0px 0px;
+		}
+	}
+}
+
+@media (max-width: 670px) {
+		.practice{
+		&__column{
+			flex: 0 1 100%
+		}
+	}
+}
+
+@media (min-width: 670px) {
+	.services{
+		&__body {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0px -15px;
+		}
+
+		&__column{
+			padding: 0px 15px;
+		}
+
+		&__item{
+			text-align: start;
+			padding: 35px;
+		}
+	}
+}
+
+@media (max-width: 560px) {
+	.advantages {
+		&__column {
+			flex: 0 1 100%;
+		}
+	}
+}
+
+@media (max-width: 479px) {
+	.main-block{
+		&__title{
+			font-size: 42px;
+		}
+		&__button{
+			flex: 1 1 100%;
+		}
+	}
+}
+
+@media (min-width: 479px) {
+	.main-block{
+		&__button{
+			&:not(:last-child){
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+/*--------------------MAIN--------------------*/

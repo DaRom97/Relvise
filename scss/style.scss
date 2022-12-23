@@ -1,0 +1,59 @@
+//Fonts
+@import "_fonts.scss";
+//Fonts
+
+//CSS-reset
+@import "_cssreset.scss";
+//CSS-reset
+
+//Bloks
+body{
+	font-family: Montserrat;
+	font-weight: 500;
+	color: #252B42;
+	background-color: #FAFAFA;
+	&._lock {
+		overflow: hidden;
+	}
+}
+a{
+	color: inherit;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.main{
+	flex: 1 1 auto;
+}
+._container {
+	max-width: 1076px;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+._ibg{
+	position: relative;
+	img{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+//header
+@import "_header.scss";
+//header
+
+//main
+@import "_main.scss";
+//main
+
+//footer
+@import "_footer.scss";
+//footer
+//Bloks
